@@ -1,0 +1,31 @@
+{
+  "name": "package-test",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon --env-file=.env ./bin/www",
+    "migration:dev": "npx sequelize-cli db:migrate",
+    "migration:dev:undo:all": "npx sequelize-cli db:migrate:undo:all",
+    "seed:dev": "npx sequelize-cli db:seed:all",
+    "seed:undo:all": "npx sequelize-cli db:seed:undo:all"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^17.2.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "joi": "^18.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "~1.9.1",
+    "multer": "^2.0.2",
+    "pg": "^8.16.3"
+  },
+  "devDependencies": {
+    "sequelize": "^6.37.7",
+    "sequelize-cli": "^6.6.3"
+  }
+}
